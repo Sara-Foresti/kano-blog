@@ -1,1 +1,5 @@
-Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/rails-templates), created by the [Le Wagon coding bootcamp](https://www.lewagon.com) team.
+I have built this application using Rails, the Ruby framework.
+To store the reader’s email, name and message I’ve created a Readers model and saved the instances into a Postgres Data Base. After submitting, you can verify that those data are actually stores locally by running the command ‘rails c’ in the console and then Readers.last would retrieve the last instance.
+This is a one page app, therefore, for the sake of the challenge I left the  links  in the navbar empty.
+This test It’s been a great chance of practising media queries and now I feel much stronger about this front end technique.
+I’ve been keen to add a Java Script sweet alert to show a nice confirmation message upon submission, but in order to do so I sacrificed an AJAX request. The two were conflicting with each other and I chose to keep the alert because the refresh of the page does not turn out to be annoying for the User experience, due to the one page format of the app.
