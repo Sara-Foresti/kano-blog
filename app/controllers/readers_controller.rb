@@ -10,6 +10,7 @@ class ReadersController < ApplicationController
     else
       render :new
     end
+
   end
 
   def reader_params
