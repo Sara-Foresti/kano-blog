@@ -1,5 +1,18 @@
-<div class="navbar">
+<div class="navbar-kano">
   <%= image_tag("http://dl.kano.me/tech-test/Logo.svg", class: 'brand') %> 
 
-  
+  <div class="navbar-links hidden-xs hidden-sm"> 
+    <%= link_to "Home", "#" %>
+    <%= link_to "Contact", "#" %>
+  </div>
+
+  <div class="navbar-links-mobile hidden-md hidden-lg">
+    <div class="dropdown">
+      <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
+      <ul class="dropdown-menu dropdown-menu-right">
+        <li><%= link_to "Home", "#" %></li>
+        <li><%= link_to "Contacts", "#" %></li>
+      </ul>
+    </div>
+  </div>
 </div>

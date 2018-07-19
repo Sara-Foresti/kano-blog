@@ -1,6 +1,8 @@
 <%= simple_form_for(@reader) do |f| %>
-  <%= f.input :email %>
-  <%= f.input :name %>
+  <div class="input-inline"> 
+    <%= f.input :email %>
+    <%= f.input :name %>
+  </div> 
   <%= f.input :message %>
-  <%= f.button :submit, "Send message" %>
+  <%= f.button :submit, "Send message", class: "button-kano" %>
 <% end %>

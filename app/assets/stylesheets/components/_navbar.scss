@@ -1,4 +1,4 @@
-.navbar {
+.navbar-kano {
   height: 80px;
   background: white;
   box-shadow: 0px 0px 1px rgba(153, 153, 153, 0.8);
@@ -7,8 +7,35 @@
   position: fixed;
   z-index: 5;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .brand {
   height: 50px;
+  padding-left: 30px;
+}
+
+.navbar-links {
+  padding-right: 30px;
+  a {
+    padding: 0 10px;
+    text-decoration: none;
+    color: $dark-grey;
+    &:hover {
+      color: $dark-pink;
+    }
+  }
+}
+
+.navbar-links-mobile {
+  padding-right: 30px;
+  a {
+    text-decoration: none;
+    color: $dark-grey;
+    &:hover {
+      color: $dark-pink;
+    }
+  }
 }

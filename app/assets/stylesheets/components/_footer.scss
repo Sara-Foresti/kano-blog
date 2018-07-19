@@ -1,5 +1,64 @@
+.footer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-left: 50px;
+  background-color: $dark-grey;
+  padding-right: 50px;
+  h3, h2 {
+    color: $dark-pink;
+    opacity: 0.8;
+  };
+  p {
+    color: white;
+    opacity: 0.8;
+  }
+}
+
 .footer-area {
   display: flex;
   align-items: flex-start;
   justify-content: space-evenly;
+  padding-top: 30px;
+  width: 50%;
+}
+
+.form-area {
+  width: 50%;
+}
+
+.form-kano {
+  padding: 20px 30px 30px 20px;
+  label {
+    color: white;
+    opacity: 0.8;
+    font-family: $body-font;
+    font-weight: lighter;
+  }
+}
+
+@media (max-width: 768px) { 
+  .footer {
+    flex-direction: column-reverse;
+    padding-bottom: 30px;
+  }
+  .footer-area {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .kano {
+    padding-right: 30px;
+  }
+  .form-area {
+    width: 100%
+  }
+  .form-kano {
+    padding: 10px 0 0 0;
+  }
+  .input-inline {
+    display: flex;
+  }
+  .email {
+    padding-right: 5px;
+  }
 }
