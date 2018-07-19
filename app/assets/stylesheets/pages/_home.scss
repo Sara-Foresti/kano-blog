@@ -4,6 +4,31 @@ h1 {
 
 .home-body {
   // height: calc(100vh - 80px);
-  height: 100vh;
+  min-height: 100vh;
   padding-top: 100px;
+}
+
+.post-title {
+  font-weight: bold;
+  padding: 10px 0 24px 0;
+  width: 80%;
+  margin: 0 auto;
+  h1 {
+    border-bottom: 2px solid $dark-pink;
+    padding-bottom: 5px;
+  }
+}
+
+.post-text {
+  margin: 0 auto;
+  width: 84%;
+  font-size: 24px;
+  line-height: 40px;
+  // overflow: scroll;
+}
+
+@media(max-width: 768px) {
+ .post-text {
+  font-size: 20px;
+ }
 }
