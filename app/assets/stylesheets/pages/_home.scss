@@ -1,1 +1,9 @@
-// Specific CSS for your home-page
+h1 {
+  margin: 0;
+}
+
+.home-body {
+  // height: calc(100vh - 80px);
+  height: 100vh;
+  padding-top: 100px;
+}
