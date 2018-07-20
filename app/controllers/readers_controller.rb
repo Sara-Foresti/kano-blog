@@ -8,7 +8,7 @@ class ReadersController < ApplicationController
     if @reader.save
       redirect_to root_path
     else
-      render :new
+      render "pages/home"
     end
 
   end
